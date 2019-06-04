@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    box-sizing: inherit;
+}
+
+header {
+    background: #FAFAFA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li:first-child a, i {
+    color: #FA5B3D;
+}
+
+header nav ul li:hover a {
+    color: #FA5B3D;
+}
+
+header nav ul li {
+    padding: 0.7rem 1rem;
+    list-style: none outside;
+}
+
+header nav ul li a {
+    color: #707070;
+    text-decoration: none;
+}
+
+header .log-in a {
+    color: #707070;
+    text-decoration: none;
+    border-right: 1px solid #707070;
+    padding-right: 0.5rem;
+}
+
+main .brand {
+    background: url(img/residential-banner-2.jpg)center no-repeat;
+    width: 100%;
+}
+
+main .brand .head {
+    width: 40%;
+    padding: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+}
+
+main .brand .head h1 {
+    font-size: 3rem;
+}
+
+main .brand .head p:first-of-type {
+    width: 85%;
+}
+
+main .brand .head p {
+    width: 95%;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+main .brand .head h1, p {
+    margin-bottom: 0.5rem;
+}
+main .how-works{
+    text-align: center;
+}
+main .how-works .options{
+    display: flex;
+    justify-content: center;
+    color: #5A5A5A;
+}
+main .how-works .options article{
+    width: 23%;
+    margin: 1rem 1.5rem;
+    color: #707070;
+}
+main .how-works .options article span{
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+}
+main .how-works .options article span:before,
+main .how-works .options article span::after{
+    content: '-';
+    color: #5A5A5A;
+    padding: 0 0.2rem;
+}
+main .how-works .options article h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+main .gallery{
+    background: #EDEDED;
+}
+main .gallery div{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background: #000;
+    color: #617474;
+    padding: 2rem;
+    text-align: center;
+    
+}
+footer div{
+    display: flex;
+    text-align: center;
+}
+footer div article{
+    width: 35%;
+}
+footer div article ul{
+    column-count: 3;
+    column-gap: 10%;
+    text-align: center;
+    margin: 0 2rem 1rem 0;
+}
+footer div article ul li{
+    text-decoration: none;
+    list-style: none;
+}
+footer div article .circle{
+    text-align: center;
+    width: 25%;
+    margin: 1rem auto;
+}
+footer div article .circle i{
+    color: #FFF;
+    padding: 0 0.2rem;
+}
+footer div article label{
+    display: block;
+    text-align: left;
+}
+footer div article label input{
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+footer div article label input[type="submit"]{
+    background: #FA5B3D;
+    color: #FFF;
+    border: none;
+}
+footer div article label input[type="submit"]:hover{
+    background: #FC9E1B;
+    cursor: pointer;
+}
+footer article .contacts i{
+margin: 1rem 0.5rem 0 0;
+color: #FFF;
+}
+footer article .contacts .fa-facebook-square:hover{
+    color: #4064AD;
+}
+footer article .contacts .fa-twitter-square:hover{
+    color: #00A7E7;
+}
+footer article .contacts .fa-pinterest-square:hover{
+    color: #E00019;
+}
+footer article .contacts .fa-instagram:hover{
+    background-image: linear-gradient(to left bottom, #6a4ec1, #8846b7, #9f3fab, #b2379d, #c0328f, #cd3084, #d73178, #df356c, #e93d5f, #f04852, #f45644, #f56435);
+}
