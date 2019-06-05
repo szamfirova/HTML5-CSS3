@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0.7rem 1.5rem;
+}
+header nav ul li:hover{
+    background: #F05F40;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+header nav ul li:hover a{
+    color: #FFF;
+}
+
+header nav ul li a {
+    color: #F05F40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main .love {
+    background: url(img/header.png)center no-repeat;
+    background-size: cover;
+    color: #FFF;
+    padding: 3rem
+}
+
+main .love h2 {
+    text-align: center;
+    padding: 3rem 0;
+    text-transform: uppercase;
+}
+
+main .love h2 span {
+    border-bottom: 2px solid #F05F40;
+    padding-bottom: 0.5rem;
+}
+
+main .love p {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+main .what-need {
+    background: #F05F40;
+    padding: 2rem ;
+    text-align: center;
+    color: #FFF;
+}
+
+main .what-need h3 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+main .what-need h3 span {
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 0.5rem;
+}
+
+main .what-need p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .what-need label input {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background: #FFF;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+main .what-need label input:hover {
+    background: #E2E6EA;
+    cursor: pointer;
+}
+
+main .kind {
+    text-align: center;
+    padding: 1rem ;
+}
+
+main .kind h3 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+main .kind h3 span {
+    border-bottom: 2px solid #F05F40;
+    padding-bottom: 0.5rem;
+}
+
+main .kind .about {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+main .kind .about article {
+    width: 23%;
+}
+
+main .kind .about article i {
+    color: #F05F40;
+    font-size: 3rem;
+}
+
+main .kind .about article h4 {
+    padding: 0.7rem 0;
+}
+
+main .gallery {
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px solid #F05F40;
+    border-bottom: 4px solid #F05F40;
+}
+
+main .gallery article {
+    width: 30%;
+    border-left: 4px solid #F05F40;
+    border-right: 4px solid #F05F40;
+}
+
+main .gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    main .kind .about{
+        flex-wrap: wrap;
+    }
+    main .kind .about article {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 520px){
+    main .love{
+        padding: 1rem;
+    }
+    main .kind .about article {
+        width: 90%;
+    }
+    main .gallery{
+        flex-wrap: wrap;
+    }
+    main .gallery article{
+        width: 90%;
+    }
+    main .gallery article:nth-child(2){
+        border-top: 4px solid #F05F40;
+    border-bottom: 4px solid #F05F40;
+    
+    }
+}
